@@ -9,9 +9,16 @@
 body{
     font-family: 'Roboto', sans-serif;
     text-transform: capitalize;
+    background-color: #222831;
 }
 
 nav {
+    position: fixed;
+    background-color: var(--black);
+    width: 100%;
+}
+
+.nav {
     background-color: var(--black);
     color: var(--white);
     display: flex;
@@ -28,7 +35,10 @@ nav {
 
 nav ul{
     padding: 0px;
+    margin: 0px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     list-style: none;
 }
 
@@ -64,21 +74,6 @@ nav ul li a:hover{
 .home-section div .title{
     width: 70%;
 }
-
-.home-section div .first-title{
-    font-size: 80px;
-    font-weight: bold;
-    color: var(--white);
-    margin: 0px;
-    padding: 0px;
-}
-.home-section div .second-title{
-    font-size: 80px;
-    font-weight: bold;
-    margin: 0px;
-    padding: 0px;
-    color: var(--cyan);
-}
 .home-section div img{
     width: 100%;
 }
@@ -98,14 +93,11 @@ nav ul li a:hover{
     font-size: 20px;
     font-weight: bold;
     border-radius: 100px;
-    margin-right: 30px;
+    margin-right: 10px;
     border: 2px solid var(--cyan);
     transition: all 0.5s;
 }
 
-.home-section .hire-me-button:hover{
-    background-color: var(--black);
-}
 
 .home-section .cv-button{
     background-color: var(--gray);
@@ -119,8 +111,51 @@ nav ul li a:hover{
     border: 2px solid var(--gray);
     transition: all 0.5s;
 }
+.home-section .hire-me-button:hover{
+    background-color: var(--black);
+}
 
 .home-section .cv-button:hover{
     background-color: var(--cyan);
     border: 2px solid var(--cyan);
+}
+
+@media (max-width :1300px){
+    .home-section{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width :767px) {
+    .nav{
+        justify-content: center; 
+    }
+    .home-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .home-section div .title{
+        width: 100%;
+        padding: 40px;
+    }
+    .home-section div img{
+        width: 100%;
+    }
+    
+    .home-section .links{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    
+    .home-section .hire-me-button {
+        font-size: 12px;
+    }
+
+
+    .home-section .cv-button{
+        font-size: 12px;
+    }
 }
