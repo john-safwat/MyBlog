@@ -1,13 +1,13 @@
 :root {
     --black : #222831 ;
-    --gray : #393E46 ;
+    --gray : rgb(57, 62, 70) ;
     --cyan : #00ADB5;
     --white : #EEEEEE;
     background-color: var(--black);
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
     background-color: #222831;
 }
@@ -57,15 +57,26 @@ nav ul li a:hover{
     color: var(--cyan);
 }
 
+section {
+    padding: 20px 40px;
+    background-color: var(--black);
+}
+
+.content-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .home-section{
     display: grid;
     width: 100%;
     grid-template-columns: 60% 40%;
     justify-content: space-between;
     background-color: var(--black);
+    align-items: center;
 }
 .home-section div{
-    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,6 +87,7 @@ nav ul li a:hover{
 }
 .home-section div img{
     width: 100%;
+    padding-top: 40px;
 }
 
 .home-section .links{
@@ -120,8 +132,179 @@ nav ul li a:hover{
     border: 2px solid var(--cyan);
 }
 
+.about-me-section{
+    background-color: var(--black);
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.about-me-section img {
+    padding: 100px;
+    width: 100%;
+}
+
+.about-me-section .content{
+    padding: 100px 0px;
+}
+
+.about-me-section .title {
+    font-size: 80px;
+    color: var(--white);
+    font-weight: 700;
+}
+.about-me-section .title span {
+    color: var(--cyan);
+    font-weight: 900;
+    font-style: normal;
+}
+.about-me-section p {
+    color: var(--white);
+    font-size: 18px;
+    padding-right: 60px;
+    line-height: 2;
+}
+.about-me-section p span{
+    color: var(--cyan);
+    font-weight: 500;
+    font-style: italic;
+}
+
+.projects{
+    background-image: url(../images/background\ pattern.png);
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+
+.projects .projects-title {
+    color: var(--white);
+    font-size: 70px;
+    font-weight: 700;
+    padding: 40px 0px ;
+}
+
+.projects .projects-title span{
+    color: var(--cyan);
+}
+
+.projects .projects-list{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-gap: 20px;
+
+}
+.projects .projects-list .project{
+    background-color:rgb(57, 62, 70 , 0.6) ;
+    padding: 20px 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.projects .project img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.projects .project .content {
+    padding: 0px 00px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.projects .project .content .title {
+    color: var(--cyan);
+    font-size: 40px;
+    margin: 10px 0px;
+}
+.projects .project .content .description {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0px;
+    margin-bottom: auto;
+
+}
+.projects .project .content .link{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 20px ;
+    text-align: center;
+    background-color: #222831 ;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+    transition: all 0.3s;
+} 
+
+.projects .project .content .link:hover{
+    background-color: var(--cyan);
+}
+
+.projects .project .content .downLoadLink{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 20px ;
+    text-align: center;
+    color: var(--cyan);
+    background-color: var(--white) ;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    transition: all 0.3s;
+} 
+
+.projects .project .content .downLoadLink:hover{
+    background-color: var(--black);
+}
+.contact {
+    color: var(--white);
+    font-size: 30px;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.contact .icons{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+.contact a img{
+    width: 80px;
+    margin: 10px;
+}
+@media (max-width: 1400px) {
+    .about-me-section{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .about-me-section img {
+        padding: 50px 100px;
+        width: 100%;
+    }   
+}
+
 @media (max-width :1300px){
     .home-section{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width : 900px) {
+    .projects .projects-title {
+        color: var(--white);
+        font-size: 40px;
+        font-weight: 700;
+        padding: 40px 0px ;
+    }
+    
+    .projects .projects-list{
+        display: grid;
+        grid-template-columns:repeat(1, 100%);
+        grid-gap: 20px;
+    
+    }
+    .projects .project .content {
+        padding: 0px 00px ;
         display: flex;
         flex-direction: column;
     }
@@ -141,6 +324,32 @@ nav ul li a:hover{
     .home-section div img{
         width: 100%;
     }
+    .about-me-section{
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      .about-me-section img {
+          padding: 20px 20px;
+          width: 100%;
+      }
+      .about-me-section .content{
+        padding: 50px 0px;
+    }
+    
+    .about-me-section .title {
+        font-size: 50px;
+        text-align: center;
+        padding: 0px;
+        color: var(--white);
+        font-weight: 700;
+    }
+    .about-me-section p {
+        text-align: center;
+        padding: 0px;
+        color: var(--white);
+        font-size: 18px;
+        line-height: 2;
+    }
     
     .home-section .links{
         width: 100%;
@@ -148,14 +357,15 @@ nav ul li a:hover{
         flex-direction: row;
         justify-content: center;
     }
-
-    
     .home-section .hire-me-button {
         font-size: 12px;
     }
-
-
     .home-section .cv-button{
         font-size: 12px;
+    }
+    .about-me-section{
+        background-color: var(--black);
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
