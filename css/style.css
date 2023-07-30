@@ -264,9 +264,8 @@ section {
 }
 
 .contact .icons{
-    display: flex;
     margin-top: 20px;
-    justify-content: center;
+    padding: 0px auto;
 }
 .contact a img{
     width: 80px;
