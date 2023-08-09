@@ -43,6 +43,13 @@ var projects = [
         'description' : "API News is JSON API For Live News and Blog Articles from the media. This Project uses the HTTP Package to connect FlutterApplication with REST API",
         'link' : 'https://github.com/john-safwat/NewsApp',
         'downLoadLink' : 'https://github.com/john-safwat/NewsApp/releases/download/NewsAppv2/news.app.apk',
+    },
+    {
+        "image" : "images/banners/numerical.png",
+        'title' : 'Numerical Analysis App',
+        'description' : "About This project is a numerical analysis application built using Flutter that can be used to solve matrices and nonlinear equations",
+        'link' : 'https://github.com/john-safwat/Numerical-Analysis-Project',
+        'downLoadLink' : 'https://github.com/john-safwat/Numerical-Analysis-Project/releases/tag/Numerical_App',
     }
 ]
 
