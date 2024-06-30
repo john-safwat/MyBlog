@@ -1,6 +1,30 @@
 
 var projects = [
     {
+        "image" : "images/banners/Heimdall.png",
+        'title' : 'Heimdall App',
+        'description' : "Heimdall is Smart Door Lock App stands as a testament to the convergence of security, convenience, and connectivity in the realm of smart home technology. By providing users with the ability to remotely control their locks, view live streams, manage E-Keys, and communicate within the app, this application transforms the way individuals engage with their home security systems.",
+        'link' : 'https://github.com/john-safwat/Heimdall',
+        'downLoadLink' : '',
+
+    },
+    {
+        "image" : "images/banners/El3b.png",
+        'title' : 'El3b App',
+        'description' : "El3b, the mobile app designed to provide you with the latest games news and a platform for chatting. We appreciate your usage of our app and strive to offer you an enjoyable and informative experience along with other app users.",
+        'link' : 'https://github.com/john-safwat/El3b',
+        'downLoadLink' : 'https://github.com/john-safwat/El3b/releases/download/El3b-V1.0.1/El3b.apk',
+
+    },
+    {
+        "image" : "images/banners/Heimdall Admin Panel.png",
+        'title' : 'Heimdall Admin Panel',
+        'description' : "The admin panel boasts a meticulously crafted user interface, designed with clarity and ease of use in mind. Navigating the system feels intuitive, with a well-organized layout that guides users directly to the functionalities they need. No more getting lost in a labyrinth of menus – the admin panel streamlines navigation, eliminating frustration and saving valuable time.",
+        'link' : 'https://github.com/john-safwat/Heimdall-Admin-Panel',
+        'downLoadLink' : 'https://github.com/john-safwat/Heimdall-Admin-Panel',
+
+    },
+    {
         "image" : "images/banners/gaya store.png",
         'title' : 'Gaya Store App',
         'description' : "A Flutter e-commerce app that allows users to browse and purchase products from a variety of categories. The app features a clean and user-friendly UI, as well as a variety of features, such as product filters, product reviews, and a shopping cart. Build to demonstrate the use of flutter and (Clean Arch , MVVM ,Repository Pattern , SQLite )",
