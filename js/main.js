@@ -5,7 +5,7 @@ var projects = [
         'title' : 'Heimdall App',
         'description' : "Heimdall is Smart Door Lock App stands as a testament to the convergence of security, convenience, and connectivity in the realm of smart home technology. By providing users with the ability to remotely control their locks, view live streams, manage E-Keys, and communicate within the app, this application transforms the way individuals engage with their home security systems.",
         'link' : 'https://github.com/john-safwat/Heimdall',
-        'downLoadLink' : '',
+        'downLoadLink' : 'https://github.com/john-safwat/Heimdall/releases/download/Heimdall/Heimdall.apk',
 
     },
     {
